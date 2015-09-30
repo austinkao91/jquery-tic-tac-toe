@@ -10,9 +10,11 @@
     <!-- Whackjobs at GithubPages don't understand symlinks... -->
     <script src="../../ttt-core-solution/ttt-core.js"></script>
     <script src="../js/ttt-view.js"></script>
-
+      <section class="ttt-view" id="tic-tac-toe"></section>
     <script>
-      // Write your code here.
+      var gameView = $(".ttt-view");
+      var view = new TTT.View(new TTT.Game(), gameView);
+      view.bindEvents();
     </script>
   </body>
 </html>
